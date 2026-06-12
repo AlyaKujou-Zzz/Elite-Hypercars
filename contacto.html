@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     ELITE HYPERCARS — Página de Contacto (contacto.html)
+     Formulario con validación JS y mapa embebido.
+     ===================================================================== -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Contacto | Elite Hypercars</title>
+  <meta name="description" content="Ponte en contacto con Elite Hypercars. Solicita información sobre nuestras marcas de hiperdeportivos de lujo a través de nuestro formulario." />
+  <meta name="keywords" content="contacto, Elite Hypercars, información hiperdeportivos, formulario" />
+  <meta property="og:title" content="Contacto | Elite Hypercars" />
+  <meta property="og:description" content="Ponte en contacto con Elite Hypercars." />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo" aria-label="Elite Hypercars - Inicio">
+      <span class="logo-name">Elite Hypercars</span>
+      <span class="logo-slogan">Where Engineering Meets Perfection</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="koenigsegg.html">Koenigsegg</a></li>
+        <li><a href="ferrari.html">Ferrari</a></li>
+        <li><a href="mclaren.html">McLaren</a></li>
+        <li><a href="bugatti.html">Bugatti</a></li>
+        <li><a href="astonmartin.html">Aston Martin</a></li>
+        <li><a href="rollsroyce.html">Rolls-Royce</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <section class="page-head">
+    <div class="container" data-anim="fade-up">
+      <h1 class="section-title">Contacto</h1>
+      <p class="section-subtitle">
+        ¿Quieres saber más sobre el mundo de los hiperdeportivos? Escríbenos.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FORMULARIO + INFO ============ -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="grid grid-2 contact-grid">
+
+        <!-- Formulario -->
+        <div data-anim="slide-left">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              <span class="error-msg" data-error-for="nombre"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+              <span class="error-msg" data-error-for="email"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="marca">Marca de interés</label>
+              <select id="marca" name="marca" required>
+                <option value="">Selecciona una marca…</option>
+                <option value="Koenigsegg">Koenigsegg</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="McLaren">McLaren</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Aston Martin">Aston Martin</option>
+                <option value="Rolls-Royce">Rolls-Royce</option>
+              </select>
+              <span class="error-msg" data-error-for="marca"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte…" required></textarea>
+              <span class="error-msg" data-error-for="mensaje"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <p id="form-success" class="form-success" role="status" hidden>
+              ¡Gracias! Tu mensaje ha sido enviado correctamente.
+            </p>
+          </form>
+        </div>
+
+        <!-- Información de contacto -->
+        <div data-anim="slide-right">
+          <div class="contact-info">
+            <h3 class="text-silver">Información</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Dirección</span>
+                <span>Paseo de la Castellana 100, Madrid, España</span>
+              </li>
+              <li>
+                <span class="info-label">Teléfono</span>
+                <span>+34 910 000 000</span>
+              </li>
+              <li>
+                <span class="info-label">Email</span>
+                <span>info@elitehypercars.com</span>
+              </li>
+              <li>
+                <span class="info-label">Horario</span>
+                <span>Lunes a Viernes · 9:00 – 19:00</span>
+              </li>
+            </ul>
+            <div class="social social-contact">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+              <a href="https://x.com" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAPA EMBEBIDO ============ -->
+  <section class="section dark" id="mapa">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Nuestra Ubicación</h2>
+      <div class="iframe-wrap map" data-anim="zoom-in">
+        <iframe
+          src="https://www.google.com/maps?q=Paseo+de+la+Castellana+100,+Madrid,+Espa%C3%B1a&output=embed"
+          title="Mapa de ubicación de Elite Hypercars en Madrid"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div data-anim="fade-up">
+        <h4>Elite Hypercars</h4>
+        <p style="color: var(--color-muted); max-width: 320px;">
+          Una colección curada de los automóviles más extraordinarios del planeta.
+        </p>
+        <div class="social">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div data-anim="fade-up" data-delay="100">
+        <h4>Marcas</h4>
+        <ul>
+          <li><a href="koenigsegg.html">Koenigsegg</a></li>
+          <li><a href="ferrari.html">Ferrari</a></li>
+          <li><a href="mclaren.html">McLaren</a></li>
+          <li><a href="bugatti.html">Bugatti</a></li>
+          <li><a href="astonmartin.html">Aston Martin</a></li>
+          <li><a href="rollsroyce.html">Rolls-Royce</a></li>
+        </ul>
+      </div>
+      <div data-anim="fade-up" data-delay="200">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Elite Hypercars. Sitio educativo sin fines comerciales. Todas las marcas pertenecen a sus respectivos propietarios.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

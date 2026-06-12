@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     ELITE HYPERCARS — Página principal (index.html)
+     Sitio dedicado a los mejores automóviles de lujo e hiperdeportivos.
+     Desarrollado con HTML5, CSS3 y JavaScript puro.
+     ===================================================================== -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ SEO: Meta etiquetas ============ -->
+  <title>Elite Hypercars | Ultimate Luxury &amp; Hypercar Collection</title>
+  <meta name="description" content="Recopilación de los mejores hiperdeportivos y autos de lujo de Koenigsegg, Ferrari, McLaren, Bugatti, Aston Martin y Rolls-Royce. Historia, diseño, rendimiento e innovación." />
+  <meta name="keywords" content="hiperdeportivos, autos de lujo, Koenigsegg, Ferrari, McLaren, Bugatti, Aston Martin, Rolls-Royce, hypercars, supercars" />
+  <meta name="author" content="Elite Hypercars" />
+
+  <!-- ============ Open Graph (redes sociales) ============ -->
+  <meta property="og:title" content="Elite Hypercars | Ultimate Luxury & Hypercar Collection" />
+  <meta property="og:description" content="Los vehículos más impresionantes jamás creados por las marcas más exclusivas del mundo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero.png" />
+
+  <!-- ============ Tipografías de Google ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ============ Hoja de estilos ============ -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================================
+       BARRA DE NAVEGACIÓN FIJA
+       ===================================================================== -->
+  <header class="navbar">
+    <!-- Logo y slogan -->
+    <a href="index.html" class="brand-logo" aria-label="Elite Hypercars - Inicio">
+      <span class="logo-name">Elite Hypercars</span>
+      <span class="logo-slogan">Where Engineering Meets Perfection</span>
+    </a>
+
+    <!-- Botón hamburguesa (móvil) -->
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Enlaces de navegación -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="koenigsegg.html">Koenigsegg</a></li>
+        <li><a href="ferrari.html">Ferrari</a></li>
+        <li><a href="mclaren.html">McLaren</a></li>
+        <li><a href="bugatti.html">Bugatti</a></li>
+        <li><a href="astonmartin.html">Aston Martin</a></li>
+        <li><a href="rollsroyce.html">Rolls-Royce</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =====================================================================
+       HERO CON VIDEO DE FONDO A PANTALLA COMPLETA
+       Video automático, sin sonido, en bucle, con capa oscura encima.
+       ===================================================================== -->
+  <section class="hero" id="hero">
+    <!-- Imagen de respaldo con efecto parallax -->
+    <div class="hero-fallback" aria-hidden="true"></div>
+
+    <!-- Video de fondo (YouTube: autoplay, mute, loop, sin controles) -->
+    <div class="hero-video-wrap" aria-hidden="true">
+  <video autoplay muted loop playsinline>
+    <source src="videos/qwerty.mp4" type="video/mp4">
+  </video>
+</div>
+
+    <!-- Capa oscura semitransparente para mejorar la legibilidad -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Contenido del hero -->
+    <div class="hero-content" data-anim="fade-up">
+      <h1>Ultimate Luxury &amp; Hypercar Collection</h1>
+      <p>Los vehículos más impresionantes jamás creados por Koenigsegg, Ferrari, McLaren, Bugatti, Aston Martin y Rolls-Royce.</p>
+      <a href="#introduccion" class="btn btn-filled">Explorar Colección</a>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator" aria-hidden="true"></div>
+  </section>
+
+  <!-- =====================================================================
+       INTRODUCCIÓN
+       Explica qué son los hiperdeportivos y qué ofrece el sitio.
+       ===================================================================== -->
+  <section class="section" id="introduccion">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">La Cúspide de la Ingeniería Automotriz</h2>
+      <p class="section-subtitle" data-anim="fade-up" data-delay="100">
+        Un homenaje a las máquinas que redefinen lo posible sobre cuatro ruedas.
+      </p>
+
+      <div class="grid grid-3">
+        <article data-anim="fade-up">
+          <h3 class="text-silver">¿Qué es un hiperdeportivo?</h3>
+          <p>
+            Un hiperdeportivo representa el punto más alto de la ingeniería automotriz:
+            vehículos de producción extremadamente limitada que combinan potencias
+            superiores a los 1.000 caballos, materiales aeroespaciales como la fibra de
+            carbono y aerodinámica activa. No son simples coches rápidos, sino
+            laboratorios rodantes donde se prueban las tecnologías del futuro.
+          </p>
+        </article>
+
+        <article data-anim="fade-up" data-delay="150">
+          <h3 class="text-silver">Excelencia sin concesiones</h3>
+          <p>
+            Koenigsegg, Ferrari, McLaren, Bugatti, Aston Martin y Rolls-Royce representan
+            la excelencia absoluta. Cada una aporta una filosofía única: la innovación
+            radical sueca, la pasión italiana, la precisión británica de la Fórmula 1, el
+            lujo extremo francés y la artesanía más refinada del mundo.
+          </p>
+        </article>
+
+        <article data-anim="fade-up" data-delay="300">
+          <h3 class="text-silver">Qué encontrarás aquí</h3>
+          <p>
+            En este sitio recorrerás la historia, los fundadores y la filosofía de diseño
+            de cada marca, junto a fichas técnicas detalladas de sus modelos más
+            impresionantes: potencia, velocidad máxima, motor y año. Una colección
+            curada para los verdaderos apasionados del automóvil.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       MARCAS — Cuadrícula de tarjetas con enlace a cada página
+       ===================================================================== -->
+  <section class="section dark" id="marcas">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Las Seis Marcas Legendarias</h2>
+      <p class="section-subtitle" data-anim="fade-up" data-delay="100">
+        Explora cada fabricante y descubre sus obras maestras.
+      </p>
+
+      <div class="grid grid-3">
+        <!-- Tarjeta Koenigsegg -->
+        <a href="koenigsegg.html" class="brand-card" data-anim="zoom-in">
+          <img src="images/banner-koenigsegg.png" alt="Hiperdeportivo Koenigsegg en showroom oscuro" />
+          <div class="card-body">
+            <h3>Koenigsegg</h3>
+            <p>Suecia · Innovación radical y récords de velocidad.</p>
+          </div>
+        </a>
+
+        <!-- Tarjeta Ferrari -->
+        <a href="ferrari.html" class="brand-card" data-anim="zoom-in" data-delay="100">
+          <img src="images/banner-ferrari.png" alt="Hiperdeportivo Ferrari rojo en showroom oscuro" />
+          <div class="card-body">
+            <h3>Ferrari</h3>
+            <p>Italia · Pasión, herencia de carreras y emoción pura.</p>
+          </div>
+        </a>
+
+        <!-- Tarjeta McLaren -->
+        <a href="mclaren.html" class="brand-card" data-anim="zoom-in" data-delay="200">
+          <img src="images/banner-mclaren.png" alt="Supercar McLaren naranja en showroom oscuro" />
+          <div class="card-body">
+            <h3>McLaren</h3>
+            <p>Reino Unido · Precisión de Fórmula 1 sobre el asfalto.</p>
+          </div>
+        </a>
+
+        <!-- Tarjeta Bugatti -->
+        <a href="bugatti.html" class="brand-card" data-anim="zoom-in">
+          <img src="images/banner-bugatti.png" alt="Hiper GT Bugatti azul en showroom oscuro" />
+          <div class="card-body">
+            <h3>Bugatti</h3>
+            <p>Francia · Lujo extremo y velocidades inimaginables.</p>
+          </div>
+        </a>
+
+        <!-- Tarjeta Aston Martin -->
+        <a href="astonmartin.html" class="brand-card" data-anim="zoom-in" data-delay="100">
+          <img src="images/banner-aston.png" alt="Deportivo Aston Martin verde en showroom oscuro" />
+          <div class="card-body">
+            <h3>Aston Martin</h3>
+            <p>Reino Unido · Elegancia británica y poder refinado.</p>
+          </div>
+        </a>
+
+        <!-- Tarjeta Rolls-Royce -->
+        <a href="rollsroyce.html" class="brand-card" data-anim="zoom-in" data-delay="200">
+          <img src="images/banner-rolls.png" alt="Sedán de lujo Rolls-Royce negro en showroom oscuro" />
+          <div class="card-body">
+            <h3>Rolls-Royce</h3>
+            <p>Reino Unido · El máximo exponente del lujo absoluto.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       TABLA INFORMATIVA COMPARATIVA
+       Resumen de los modelos insignia de cada marca.
+       ===================================================================== -->
+  <section class="section" id="comparativa">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Tabla Comparativa de Insignias</h2>
+      <p class="section-subtitle" data-anim="fade-up" data-delay="100">
+        Los modelos más representativos de cada fabricante.
+      </p>
+
+      <div class="table-wrap" data-anim="fade-up">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Potencia</th>
+              <th>Velocidad Máxima</th>
+              <th>País</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Koenigsegg</td><td>Jesko Absolut</td><td>1.600 hp</td><td>+500 km/h (est.)</td><td>Suecia</td></tr>
+            <tr><td>Ferrari</td><td>F80</td><td>1.200 hp</td><td>350 km/h</td><td>Italia</td></tr>
+            <tr><td>McLaren</td><td>Speedtail</td><td>1.050 hp</td><td>403 km/h</td><td>Reino Unido</td></tr>
+            <tr><td>Bugatti</td><td>Chiron SS 300+</td><td>1.600 hp</td><td>490 km/h</td><td>Francia</td></tr>
+            <tr><td>Aston Martin</td><td>Valkyrie</td><td>1.160 hp</td><td>350 km/h</td><td>Reino Unido</td></tr>
+            <tr><td>Rolls-Royce</td><td>Spectre</td><td>584 hp</td><td>250 km/h</td><td>Reino Unido</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+     MULTIMEDIA — Video de bienvenida
+     ===================================================================== -->
+<section class="section dark" id="multimedia">
+  <div class="container">
+    <h2 class="section-title" data-anim="fade-up">
+      Experiencia Cinematográfica
+    </h2>
+
+    <p class="section-subtitle" data-anim="fade-up" data-delay="100">
+      Vive la emoción de los hiperdeportivos en movimiento.
+    </p>
+
+    <div class="iframe-wrap" data-anim="zoom-in">
+      <video controls preload="metadata" width="100%">
+        <source src="videos/abajo.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+  </div>
+</section>
+
+<style>
+.iframe-wrap video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+</style>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <!-- Columna de marca -->
+      <div data-anim="fade-up">
+        <h4>Elite Hypercars</h4>
+        <p style="color: var(--color-muted); max-width: 320px;">
+          Una colección curada de los automóviles más extraordinarios del planeta.
+          Where Engineering Meets Perfection.
+        </p>
+        <!-- Redes sociales -->
+        <div class="social">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+
+      <!-- Columna de navegación -->
+      <div data-anim="fade-up" data-delay="100">
+        <h4>Marcas</h4>
+        <ul>
+          <li><a href="koenigsegg.html">Koenigsegg</a></li>
+          <li><a href="ferrari.html">Ferrari</a></li>
+          <li><a href="mclaren.html">McLaren</a></li>
+          <li><a href="bugatti.html">Bugatti</a></li>
+          <li><a href="astonmartin.html">Aston Martin</a></li>
+          <li><a href="rollsroyce.html">Rolls-Royce</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna de enlaces oficiales -->
+      <div data-anim="fade-up" data-delay="200">
+        <h4>Sitios Oficiales</h4>
+        <ul>
+          <li><a href="https://www.koenigsegg.com" target="_blank" rel="noopener">koenigsegg.com</a></li>
+          <li><a href="https://www.ferrari.com" target="_blank" rel="noopener">ferrari.com</a></li>
+          <li><a href="https://www.mclaren.com" target="_blank" rel="noopener">mclaren.com</a></li>
+          <li><a href="https://www.bugatti.com" target="_blank" rel="noopener">bugatti.com</a></li>
+          <li><a href="https://www.astonmartin.com" target="_blank" rel="noopener">astonmartin.com</a></li>
+          <li><a href="https://www.rolls-roycemotorcars.com" target="_blank" rel="noopener">rolls-roycemotorcars.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Elite Hypercars. Sitio educativo sin fines comerciales. Todas las marcas pertenecen a sus respectivos propietarios.</p>
+    </div>
+  </footer>
+
+  <!-- ============ Scripts ============ -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     ELITE HYPERCARS — Página de marca: BUGATTI (bugatti.html)
+     ===================================================================== -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Bugatti | Elite Hypercars</title>
+  <meta name="description" content="Descubre Bugatti: historia desde 1909, Ettore Bugatti y los modelos Chiron Super Sport, Bolide y Tourbillon. Lujo francés y velocidad extrema." />
+  <meta name="keywords" content="Bugatti, Chiron, Bolide, Tourbillon, Molsheim, hiperdeportivos franceses, W16" />
+  <meta property="og:title" content="Bugatti | Elite Hypercars" />
+  <meta property="og:description" content="Arte, forma y técnica: Chiron, Bolide y Tourbillon." />
+  <meta property="og:image" content="images/banner-bugatti.png" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="navbar">
+    <a href="index.html" class="brand-logo" aria-label="Elite Hypercars - Inicio">
+      <span class="logo-name">Elite Hypercars</span>
+      <span class="logo-slogan">Where Engineering Meets Perfection</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="koenigsegg.html">Koenigsegg</a></li>
+        <li><a href="ferrari.html">Ferrari</a></li>
+        <li><a href="mclaren.html">McLaren</a></li>
+        <li><a href="bugatti.html">Bugatti</a></li>
+        <li><a href="astonmartin.html">Aston Martin</a></li>
+        <li><a href="rollsroyce.html">Rolls-Royce</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ BANNER DE MARCA (parallax) ============ -->
+  <section class="brand-banner" style="background-image: url('images/banner-bugatti.png');">
+    <div class="banner-inner" data-anim="fade-up">
+      <h1>Bugatti</h1>
+      <p class="meta">Francia · Fundada en 1909</p>
+    </div>
+  </section>
+
+  <!-- ============ HISTORIA Y FILOSOFÍA ============ -->
+  <section class="section" id="historia">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Historia &amp; Filosofía</h2>
+      <div class="grid grid-2">
+        <div data-anim="slide-left">
+          <h3 class="text-silver">El arte de la velocidad</h3>
+          <p>
+            Bugatti fue fundada en 1909 por <strong>Ettore Bugatti</strong> en Molsheim,
+            Francia. Desde sus inicios, la marca fusionó el arte con la ingeniería,
+            creando automóviles que eran tanto obras maestras estéticas como prodigios
+            mecánicos.
+          </p>
+          <p style="margin-top: 1rem;">
+            Tras renacer en la era moderna con el Veyron, Bugatti redefinió lo que un
+            automóvil de producción podía lograr, superando barreras de velocidad antes
+            inimaginables.
+          </p>
+        </div>
+        <div data-anim="slide-right">
+          <h3 class="text-silver">Lujo y excelencia técnica</h3>
+          <p>
+            La filosofía de Bugatti se resume en la máxima de su fundador: "Nada es
+            demasiado bello, nada es demasiado caro". Cada vehículo combina lujo
+            extremo, acabados artesanales y motores titánicos como el legendario W16,
+            persiguiendo siempre la perfección absoluta.
+          </p>
+          <ul style="margin-top: 1rem; color: var(--color-muted); padding-left: 1.2rem;">
+            <li><strong>Fundador:</strong> Ettore Bugatti</li>
+            <li><strong>País de origen:</strong> Francia (Molsheim)</li>
+            <li><strong>Filosofía:</strong> Arte, lujo y velocidad sin límites</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEJORES VEHÍCULOS ============ -->
+  <section class="section dark" id="vehiculos">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Mejores Vehículos</h2>
+      <p class="section-subtitle" data-anim="fade-up" data-delay="100">
+        Tres iconos de Molsheim.
+      </p>
+
+      <div class="grid grid-3">
+        <!-- Chiron Super Sport -->
+        <article class="car-card" data-anim="fade-up">
+          <img src="images/bugatti-chiron.png" alt="Bugatti Chiron Super Sport negro y naranja" />
+          <div class="car-body">
+            <h3>Chiron Super Sport</h3>
+            <span class="car-year">2021</span>
+            <p class="desc">
+              La culminación del legendario motor W16. La versión 300+ superó la barrera
+              de los 490 km/h, consolidando a Bugatti como el rey de la velocidad
+              extrema.
+            </p>
+            <div class="specs">
+              <div class="spec"><span class="value">1.600</span><span class="label">HP</span></div>
+              <div class="spec"><span class="value">490+</span><span class="label">km/h</span></div>
+              <div class="spec"><span class="value">W16 Quad-Turbo</span><span class="label">Motor</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bolide -->
+        <article class="car-card" data-anim="fade-up" data-delay="150">
+          <img src="images/bugatti-bolide.png" alt="Bugatti Bolide negro y azul" />
+          <div class="car-body">
+            <h3>Bolide</h3>
+            <span class="car-year">2024</span>
+            <p class="desc">
+              La interpretación más radical y orientada a la pista de Bugatti: un
+              monstruo ligero con la potencia del W16 y una aerodinámica de competición
+              pura.
+            </p>
+            <div class="specs">
+              <div class="spec"><span class="value">1.600</span><span class="label">HP</span></div>
+              <div class="spec"><span class="value">+500</span><span class="label">km/h</span></div>
+              <div class="spec"><span class="value">W16 Quad-Turbo</span><span class="label">Motor</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tourbillon -->
+        <article class="car-card" data-anim="fade-up" data-delay="300">
+          <img src="images/bugatti-tourbillon.png" alt="Bugatti Tourbillon azul y negro" />
+          <div class="car-body">
+            <h3>Tourbillon</h3>
+            <span class="car-year">2026</span>
+            <p class="desc">
+              El sucesor del Chiron inaugura una nueva era con un motor V16 atmosférico
+              híbrido y una cabina inspirada en la alta relojería. El futuro de Bugatti.
+            </p>
+            <div class="specs">
+              <div class="spec"><span class="value">1.800</span><span class="label">HP</span></div>
+              <div class="spec"><span class="value">445</span><span class="label">km/h</span></div>
+              <div class="spec"><span class="value">V16 Híbrido</span><span class="label">Motor</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TABLA TÉCNICA ============ -->
+  <section class="section" id="tabla">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Ficha Técnica</h2>
+      <div class="table-wrap" data-anim="fade-up">
+        <table class="data-table">
+          <thead>
+            <tr><th>Modelo</th><th>Potencia</th><th>Velocidad Máx.</th><th>Motor</th><th>Año</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Chiron Super Sport</td><td>1.600 hp</td><td>490+ km/h</td><td>W16 8.0 Quad-Turbo</td><td>2021</td></tr>
+            <tr><td>Bolide</td><td>1.600 hp</td><td>+500 km/h</td><td>W16 8.0 Quad-Turbo</td><td>2024</td></tr>
+            <tr><td>Tourbillon</td><td>1.800 hp</td><td>445 km/h</td><td>V16 8.3 Híbrido</td><td>2026</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="section dark" id="galeria">
+    <div class="container">
+      <h2 class="section-title" data-anim="fade-up">Galería</h2>
+      <div class="gallery" data-anim="fade-up">
+        <img src="images/bugatti-chiron.png" alt="Bugatti Chiron Super Sport" />
+        <img src="images/bugatti-bolide.png" alt="Bugatti Bolide" />
+        <img src="images/bugatti-tourbillon.png" alt="Bugatti Tourbillon" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MULTIMEDIA: VIDEO SECUNDARIO ============ -->
+<section class="section" id="video">
+  <div class="container">
+    <h2 class="section-title" data-anim="fade-up">En Movimiento</h2>
+
+    <div class="iframe-wrap" data-anim="zoom-in">
+      <video controls width="100%">
+        <source src="videos/BUGATTI.MP4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+
+    <p style="text-align:center; margin-top:1.5rem;">
+      <a href="https://www.bugatti.com" target="_blank" rel="noopener" class="btn">
+        Visitar Sitio Oficial
+      </a>
+    </p>
+  </div>
+</section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div data-anim="fade-up">
+        <h4>Elite Hypercars</h4>
+        <p style="color: var(--color-muted); max-width: 320px;">
+          Una colección curada de los automóviles más extraordinarios del planeta.
+        </p>
+        <div class="social">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <div data-anim="fade-up" data-delay="100">
+        <h4>Marcas</h4>
+        <ul>
+          <li><a href="koenigsegg.html">Koenigsegg</a></li>
+          <li><a href="ferrari.html">Ferrari</a></li>
+          <li><a href="mclaren.html">McLaren</a></li>
+          <li><a href="bugatti.html">Bugatti</a></li>
+          <li><a href="astonmartin.html">Aston Martin</a></li>
+          <li><a href="rollsroyce.html">Rolls-Royce</a></li>
+        </ul>
+      </div>
+      <div data-anim="fade-up" data-delay="200">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="https://www.bugatti.com" target="_blank" rel="noopener">Sitio oficial</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Elite Hypercars. Sitio educativo sin fines comerciales. Todas las marcas pertenecen a sus respectivos propietarios.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
